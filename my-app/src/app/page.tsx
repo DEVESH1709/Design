@@ -63,7 +63,7 @@ export default function ExactAgencyDesign() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)}
   }, [])
-// Don't render until mounted to avoid hydration issues
+
   if (!mounted) {
     return null
   }
