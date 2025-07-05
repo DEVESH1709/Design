@@ -24,8 +24,6 @@ import {
   Shield,
   Users,
   Award,
-  Phone,
-  Mail,
   Facebook,
   Twitter,
   Instagram,
