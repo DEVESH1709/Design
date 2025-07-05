@@ -54,7 +54,6 @@ const staggerContainer = {
 }
 
 export default function ExactAgencyDesign() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
   const [mounted, setMounted] = useState(false)
   useEffect(() => {
