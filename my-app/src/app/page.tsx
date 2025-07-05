@@ -57,13 +57,18 @@ const staggerContainer = {
 export default function ExactAgencyDesign() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
-
+  const [mounted, setMounted] = useState(false)
   useEffect(() => {
+     setMounted(true)
     const handleScroll = () => setScrollY(window.scrollY)
+     if (typeof window !== "undefined") {
     window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)}
   }, [])
-
+// Don't render until mounted to avoid hydration issues
+  if (!mounted) {
+    return null
+  }
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden relative">
      
