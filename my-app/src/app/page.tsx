@@ -18,8 +18,7 @@ import office from "/public/office.jpg"
 import { BackgroundAnimation } from "./components/background-animation"
 import { HeroBackground } from "./components/hero-background"
 import {
-  Menu,
-  X,
+ 
   Search,
   Globe,
   Shield,
