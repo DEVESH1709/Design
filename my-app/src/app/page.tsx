@@ -114,30 +114,10 @@ export default function ExactAgencyDesign() {
                <Button className="border-gray-200"><PhoneCallIcon  className="h-4 w-4 white"></PhoneCallIcon>ContactUs</Button>
             </div>
 
-            <button className="lg:hidden text-gray-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+           
           </div>
 
-          {isMenuOpen && (
-            <motion.div
-              className="lg:hidden mt-4 pb-4 border-t border-gray-800"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-            >
-              {["Home", "About Us", "Services", "Portfolio", "Pages", "Contact"].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="block py-3 text-gray-300 hover:text-white transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item}
-                </a>
-              ))}
-            </motion.div>
-          )}
+         
         </div>
       </motion.nav>
 
