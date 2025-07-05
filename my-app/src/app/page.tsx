@@ -603,30 +603,20 @@ export default function ExactAgencyDesign() {
           >
             <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">REQUEST A CALL BACK</h2>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-              Ready to transform your digital presence? Let's discuss how we can bring your vision to life with our
-              innovative solutions.
+              When you need intelligent answer to your toughest questions, we're here to help. We're just a call away! Don't hang back from getting it touch with with us. We'll be glad to assist you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
                   variant="secondary"
-                  className="flex-1 bg-white text-blue-700 hover:bg-gray-100 font-semibold"
+                  className="flex-1 cursor-pointer text-white w-100 bg-gray-900 border-2 hover:bg-black-100 font-semibold"
                 >
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
+                  
+                REQUEST A CALL BACK
                 </Button>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="flex-1 border-2 border-white text-white hover:bg-white hover:text-blue-700 bg-transparent font-semibold"
-                >
-                  <Mail className="mr-2 h-5 w-5" />
-                  Email Us
-                </Button>
-              </motion.div>
+               
             </div>
           </motion.div>
         </div>
